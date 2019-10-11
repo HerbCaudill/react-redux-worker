@@ -2,9 +2,9 @@
 
 Run a Redux store in a Web Worker.
 
-![demo](./img/demo.gif)
-
 ### To run the demo
+
+![demo](./img/demo.gif)
 
 ```
 yarn
