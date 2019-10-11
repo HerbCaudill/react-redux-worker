@@ -10,6 +10,8 @@ yarn demo
 # open localhost:1234
 ```
 
+You should see this:
+
 ![demo](./img/demo.gif)
 
 ### Prior art
