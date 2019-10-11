@@ -7,10 +7,9 @@ Run a Redux store in a Web Worker.
 ```
 yarn
 yarn demo
-# open localhost:1234
 ```
 
-You should see this:
+Then open http://localhost:1234 in a browser. You should see this:
 
 ![demo](./img/demo.gif)
 
