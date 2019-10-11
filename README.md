@@ -2,15 +2,15 @@
 
 Run a Redux store in a Web Worker.
 
-### To run the demo
-
-![demo](./img/demo.gif)
+### Run the demo
 
 ```
 yarn
 yarn demo
 # open localhost:1234
 ```
+
+![demo](./img/demo.gif)
 
 ### Prior art
 
