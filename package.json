@@ -1,0 +1,54 @@
+{
+  "name": "react-redux-worker",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/react-redux-worker.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --env=jsdom",
+    "lint": "tsdx lint",
+    "postinstall": "cd ./demo && yarn",
+    "demo": "cd ./demo && yarn start"
+  },
+  "dependencies": {
+    "@types/lodash.isequal": "^4.5.5",
+    "comlinkjs": "3",
+    "lodash.isequal": "4",
+    "react-countdown-clock": "2",
+    "react-redux": "7",
+    "redux": "4",
+    "uuid": "3"
+  },
+  "devDependencies": {
+    "@types/jest": "24",
+    "@types/react": "16",
+    "@types/react-dom": "16",
+    "husky": "3",
+    "react": "16",
+    "react-dom": "16",
+    "tsdx": "0",
+    "tslib": "1",
+    "typescript": "3"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "redux": ">=4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
+}

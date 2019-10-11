@@ -1,0 +1,25 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "@types/react-redux": "^7.1.4",
+    "react-app-polyfill": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "16",
+    "@types/react-dom": "16",
+    "parcel": "1",
+    "typescript": "3"
+  },
+  "alias": {
+    "react": "../node_modules/react",
+    "react-dom": "../node_modules/react-dom/profiling",
+    "scheduler/tracing": "../node_modules/scheduler/tracing-profiling"
+  }
+}
