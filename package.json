@@ -19,11 +19,7 @@
   "dependencies": {
     "@types/lodash.isequal": "^4.5.5",
     "comlinkjs": "3",
-    "lodash.isequal": "4",
-    "react-countdown-clock": "2",
-    "react-redux": "7",
-    "redux": "4",
-    "uuid": "3"
+    "lodash.isequal": "4"
   },
   "devDependencies": {
     "@types/jest": "24",
