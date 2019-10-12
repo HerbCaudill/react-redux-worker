@@ -10,8 +10,7 @@
   "dependencies": {
     "react-countdown-clock": "2",
     "react-redux": "7",
-    "redux": "4",
-    "react-app-polyfill": "1"
+    "redux": "4"
   },
   "devDependencies": {
     "@types/react": "16",
