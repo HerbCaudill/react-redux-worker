@@ -2,6 +2,8 @@
 
 Run a Redux store in a Web Worker.
 
+### Why
+
 ### Running the demo
 
 ```
