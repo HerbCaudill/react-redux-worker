@@ -62,7 +62,7 @@ const proxyStore = createProxyStore(store)
 expose(proxyStore, self)
 ```
 
-### Add a provider
+### Add a context provider for the proxy store
 
 ## Prior art
 
