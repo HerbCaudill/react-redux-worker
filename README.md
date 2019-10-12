@@ -9,14 +9,15 @@ can prevent your UI from responding while it's thinking&mdash;making your applic
 unresponsive.
 
 In theory, web workers should be the perfect solution: You can do your heavy lifting in a worker
-thread without interfering with your main UI thread. But the asynchronous, message-based [web worker API](https://redux.js.org)
-puts us in unfamiliar terrain.
+thread without interfering with your main UI thread. But the asynchronous, message-based [web worker
+API](https://redux.js.org) puts us in unfamiliar terrain.
 
-This library is intended to make the experience of using a Redux store in a worker
+This library is intended to make the developer experience of using a worker-based Redux store as
+similar as possible to an ordinary Redux setup.
 
 ### How it works
 
-![demo](./img/react-redux-worker.svg)
+![diagram](./img/react-redux-worker.svg)
 
 ### Running the demo
 
