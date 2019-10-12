@@ -1,5 +1,5 @@
 ﻿import React from 'react'
-import { useDispatch, useSelector } from '../src'
+import { useDispatch, useSelector } from 'react-redux-worker'
 import { State } from './redux/reducer'
 import { Calculate } from './Calculate'
 
