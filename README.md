@@ -58,7 +58,7 @@ import { reducer } from './reducer'
 const store = createStore(reducer) // if you have initial state and/or middleware you can add them here as well
 ```
 
-Then create a proxy store, and
+Then create a proxy store, and expose it to the Comlink messaging framework:
 
 ```ts
 import { expose, createProxyStore } from 'react-redux-worker'
