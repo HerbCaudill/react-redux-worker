@@ -19,7 +19,8 @@ similar as possible to an ordinary Redux setup.
 
 This library provides you with a **proxy Redux store**. To your application, the proxy looks just
 like the real thing: It communicates with it synchronously, using `useDispatch` and `useSelector`
-hooks just like the ones that the official [react-redux] bindings
+hooks just like the ones that the official [react-redux](https://github.com/reduxjs/react-redux)
+bindings provide.
 
 ![diagram](./img/react-redux-worker.svg)
 
