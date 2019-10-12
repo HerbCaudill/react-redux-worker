@@ -9,7 +9,7 @@ can prevent your UI from responding while it's thinking&mdash;making your applic
 unresponsive.
 
 In theory, web workers should be the perfect solution: You can do your heavy lifting in a worker
-thread without interfering with your main UI thread. But the asynchronous, message-based [web worker
+thread without interfering with your main UI thread. But the message-based [web worker
 API](https://redux.js.org) puts us in unfamiliar terrain.
 
 This library is intended to make the developer experience of using a worker-based Redux store as
@@ -18,7 +18,7 @@ similar as possible to an ordinary Redux setup.
 ## How it works
 
 This library provides you with a **proxy Redux store**. To your application, the proxy looks just
-like the real thing: You communicate with it synchronously, using `useDispatch` and `useSelector`
+like the real thing: You communicate with it using `useDispatch` and `useSelector`
 hooks just like the ones that the official [react-redux](https://github.com/reduxjs/react-redux)
 bindings provide.
 
