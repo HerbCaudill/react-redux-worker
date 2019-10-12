@@ -60,17 +60,19 @@ const store = createStore(reducer) // if you have initial state and/or middlewar
 
 Then create a proxy store
 
-```
+```ts
 import { expose, createProxyStore } from 'react-redux-worker'
 
 //...
 const proxyStore = createProxyStore(store)
-
-
+expose(proxyStore, self)
+```
 
 ## Prior art
 
 Based on [redux-workerized](https://github.com/mizchi/redux-workerized) by [@mizchi](https://github.com/mizchi/)
+
+```
 
 ```
 
