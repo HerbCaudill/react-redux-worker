@@ -1,4 +1,4 @@
-## react-redux-worker
+# react-redux-worker
 
 Run a Redux store in a web worker.
 
