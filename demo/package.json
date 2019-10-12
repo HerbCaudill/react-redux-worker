@@ -10,6 +10,8 @@
   "dependencies": {
     "react-redux-worker": "file:..",
     "react-countdown-clock": "2",
+    "react": "16",
+    "react-dom": "16",
     "react-redux": "7",
     "redux": "4",
     "react-app-polyfill": "1"
