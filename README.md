@@ -24,7 +24,7 @@ bindings provide.
 
 ![diagram](./img/react-redux-worker.svg)
 
-The proxy communicates with the store in the worker using
+The proxy communicates with the store in the worker using the [Comlink] library, built by the
 
 ### Running the demo
 
