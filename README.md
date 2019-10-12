@@ -29,7 +29,7 @@ The proxy then handles messaging back and forth with the store in the worker usi
 
 ## Running the demo
 
-```
+```bash
 yarn
 yarn demo
 ```
@@ -42,18 +42,19 @@ Then open http://localhost:1234 in a browser. You should see something like this
 
 ### Add the dependency
 
-```
+```bash
 yarn add react-redux-worker
 ```
 
 ### Expose your store as a worker
 
-In a stand-alone file, build your store the way you always have:
+In a stand-alone file, import your reducers build your store the way you always have:
 
-```
+```ts
 import reducer from './reducer'
 
 const store = createStore(reducer)
+// or createStore
 ```
 
 > **Note:** Your store should live in a file named `*.worker.js`
