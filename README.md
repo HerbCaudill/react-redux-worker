@@ -24,8 +24,8 @@ bindings provide.
 
 ![diagram](./img/react-redux-worker.svg)
 
-The proxy communicates with the store in the worker using the [Comlink](https://github.com/GoogleChromeLabs/comlink) library, built by the Google
-Chrome team.
+The proxy communicates with the store in the worker using the
+[Comlink](https://github.com/GoogleChromeLabs/comlink) library, built by the Google Chrome team.
 
 ### Running the demo
 
