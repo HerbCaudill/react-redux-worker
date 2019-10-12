@@ -68,6 +68,12 @@ expose(proxyStore, self)
 At the root of your app, replace your standard `Provider` with one that gives access to the proxy
 store.
 
+```ts
+const worker = new Worker('./redux/worker.ts')
+const ProxyProvider = await getProvider(worker)
+
+
 ## Prior art
 
 Based on [redux-workerized](https://github.com/mizchi/redux-workerized) by [@mizchi](https://github.com/mizchi/)
+```
