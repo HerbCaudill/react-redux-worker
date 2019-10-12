@@ -9,12 +9,12 @@
     "dist"
   ],
   "scripts": {
-    "start": "tsdx watch",
+    "dev": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --env=jsdom",
     "lint": "tsdx lint",
     "postinstall": "cd ./demo && yarn",
-    "demo": "cd ./demo && yarn start"
+    "start": "cd ./demo && yarn start"
   },
   "dependencies": {
     "@types/lodash.isequal": "^4.5.5",
