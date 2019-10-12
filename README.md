@@ -2,7 +2,7 @@
 
 Run a Redux store in a Web Worker.
 
-### Run the demo
+### Running the demo
 
 ```
 yarn
