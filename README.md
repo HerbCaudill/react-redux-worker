@@ -36,7 +36,7 @@ yarn demo
 
 Then open http://localhost:1234 in a browser. You should see this:
 
-![demo](./img/demo.gif)
+![demo](./img/worker-demo.gif)
 
 ### Usage
 
