@@ -4,6 +4,8 @@ Run a Redux store in a Web Worker.
 
 ### Why
 
+Any expensive work done in a Redux store can end up
+
 ### Running the demo
 
 ```
