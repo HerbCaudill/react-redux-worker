@@ -22,7 +22,7 @@ like the real thing: You communicate with it synchronously using `useDispatch` a
 hooks just like the ones that the official [react-redux](https://github.com/reduxjs/react-redux)
 bindings provide.
 
-![diagram](https://raw.githubusercontent.com/HerbCaudill/react-redux-worker/2c2665410d3de1e88c15c60c0a8c492d6dd72c10/img/react-redux-worker.svg)
+![diagram](https://raw.githubusercontent.com/HerbCaudill/react-redux-worker/2c2665410d3de1e88c15c60c0a8c492d6dd72c10/img/react-redux-worker.svg?sanitize=true)
 
 The proxy then handles messaging back and forth with the store in the worker using the
 [Comlink](https://github.com/GoogleChromeLabs/comlink) library, built by the Google Chrome team.
