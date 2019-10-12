@@ -51,6 +51,7 @@ yarn add react-redux-worker
 In a stand-alone file, import your reducers build your store the way you always have:
 
 ```ts
+// worker.ts
 import { createStore } from 'redux'
 import { reducer } from './reducer'
 
