@@ -4,12 +4,15 @@ Run a Redux store in a web worker.
 
 ### Why
 
-If you're doing any sort of computationally expensive work in your Redux reducers or middleware, it
+If you're doing any sort of computationally expensive work in your [Redux](https://redux.js.org) reducers or middleware, it
 can prevent your UI from responding while it's thinking&mdash;making your application feel slow and
 unresponsive.
 
 In theory, web workers should be the perfect solution: You can do your heavy lifting in a worker
-thread without interfering with your main UI thread. But the web worker
+thread without interfering with your main UI thread. But the asynchronous, message-based [web worker API](https://redux.js.org)
+puts us in unfamiliar terrain.
+
+This library is intended to make using
 
 ### How it works
 
