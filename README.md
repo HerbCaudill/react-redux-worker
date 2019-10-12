@@ -58,7 +58,7 @@ import { reducer } from './reducer'
 const store = createStore(reducer) // if you have initial state and/or middleware you can add them here as well
 ```
 
-Then
+Then wrap the store with a ProxyStore
 
 ## Prior art
 
