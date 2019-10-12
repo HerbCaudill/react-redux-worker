@@ -23,7 +23,10 @@ const start = async () => {
     <div>
       <Clock></Clock>
       <p>Use the buttons to find a few large prime numbers.</p>
-      <p>Without a worker, notice how the animation stops updating smoothly.</p>
+      <p>
+        Without a worker, notice how the animation stops updating every time the
+        app calculates a new prime.
+      </p>
       <div style={{ display: 'flex' }}>
         {/* using redux-workerized */}
         <ProxyProvider>
