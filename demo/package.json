@@ -21,5 +21,10 @@
     "@types/react-redux": "^7.1.4",
     "parcel": "1",
     "typescript": "3"
+  },
+  "alias": {
+    "react": "../node_modules/react",
+    "react-dom": "../node_modules/react-dom/profiling",
+    "scheduler/tracing": "../node_modules/scheduler/tracing-profiling"
   }
 }
