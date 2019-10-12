@@ -48,7 +48,9 @@ yarn add react-redux-worker
 
 ### Expose your store as a worker
 
-Build your store the way you always have
+In a uild your store the way you always have
+
+> **Note:** Your store should live in a file named `*.worker.js`
 
 ## Prior art
 
