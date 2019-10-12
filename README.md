@@ -48,6 +48,8 @@ yarn add react-redux-worker
 
 ### Expose your store as a worker
 
+Build your store the way you always have
+
 ## Prior art
 
 Based on [redux-workerized](https://github.com/mizchi/redux-workerized) by [@mizchi](https://github.com/mizchi/)
