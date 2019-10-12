@@ -40,11 +40,13 @@ Then open http://localhost:1234 in a browser. You should see something like this
 
 ## Usage
 
+### Add the dependency
+
 ```
 yarn add react-redux-worker
 ```
 
-###
+### Expose your store as a worker
 
 ## Prior art
 
