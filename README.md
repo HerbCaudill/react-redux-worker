@@ -111,4 +111,5 @@ export function WithWorker() {
 
 - Based on [redux-workerized](https://github.com/mizchi/redux-workerized) by
   [@mizchi](https://github.com/mizchi/)
-- Uses some ideas from [A Guide to using Web Workers in React](https://www.fullstackreact.com/articles/introduction-to-web-workers-with-react/)
+- Uses some ideas from [A Guide to using Web Workers in
+  React](https://www.fullstackreact.com/articles/introduction-to-web-workers-with-react by [@yomieluwande](https://twitter.com/yomieluwande)
