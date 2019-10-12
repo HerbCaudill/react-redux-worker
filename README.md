@@ -62,7 +62,10 @@ Then create a proxy store
 
 ```
 import { expose, createProxyStore } from 'react-redux-worker'
+
+//...
 const proxyStore = createProxyStore(store)
+
 
 
 ## Prior art
