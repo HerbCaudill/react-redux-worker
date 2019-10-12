@@ -10,7 +10,7 @@ unresponsive.
 
 In theory, web workers should be the perfect solution: You can do your heavy lifting in a worker
 thread without interfering with your main UI thread. But the message-based [web worker
-API](https://redux.js.org) puts us in unfamiliar terrain.
+API](https://redux.js.org) puts us on unfamiliar terrain.
 
 This library is intended to make the developer experience of using a worker-based Redux store as
 similar as possible to an ordinary Redux setup.
@@ -22,7 +22,7 @@ like the real thing: You communicate with it synchronously using `useDispatch` a
 hooks just like the ones that the official [react-redux](https://github.com/reduxjs/react-redux)
 bindings provide.
 
-![diagram](./img/react-redux-worker.svg)
+![diagram](https://raw.githubusercontent.com/HerbCaudill/react-redux-worker/2c2665410d3de1e88c15c60c0a8c492d6dd72c10/img/react-redux-worker.svg)
 
 The proxy then handles messaging back and forth with the store in the worker using the
 [Comlink](https://github.com/GoogleChromeLabs/comlink) library, built by the Google Chrome team.
@@ -36,7 +36,7 @@ yarn start
 
 Then open http://localhost:1234 in a browser. You should see something like this:
 
-![demo](./img/worker-demo.gif)
+![demo](https://github.com/HerbCaudill/react-redux-worker/raw/2c2665410d3de1e88c15c60c0a8c492d6dd72c10/img/worker-demo.gif)
 
 ## Usage
 
