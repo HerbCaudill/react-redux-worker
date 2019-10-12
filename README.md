@@ -17,6 +17,10 @@ similar as possible to an ordinary Redux setup.
 
 ### How it works
 
+This library provides you with a **proxy Redux store**. To your application, the proxy looks just
+like the real thing: It communicates with it synchronously, using `useDispatch` and `useSelector`
+hooks just like the ones that the official [react-redux] bindings
+
 ![diagram](./img/react-redux-worker.svg)
 
 ### Running the demo
