@@ -48,7 +48,7 @@ yarn add react-redux-worker
 
 ### Expose your store as a worker
 
-In a stand-alone file, import your reducer (and maybe middlewares) and build your store the way you always have. Then
+In a stand-alone file, import your reducer (and middlewares, if applicable) and build your store the way you always have. Then
 create a proxy store, and expose it as a worker messaging endpoint:
 
 ```ts
