@@ -24,6 +24,8 @@ bindings provide.
 
 ![diagram](./img/react-redux-worker.svg)
 
+The proxy communicates with the store in the worker using
+
 ### Running the demo
 
 ```
