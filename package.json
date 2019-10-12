@@ -24,7 +24,6 @@
     "build": "tsdx build",
     "test": "tsdx test --env=jsdom",
     "lint": "tsdx lint",
-    "postinstall": "cd ./demo && yarn",
     "prepublish": "tsdx build",
     "start": "cd ./demo && yarn start"
   },
