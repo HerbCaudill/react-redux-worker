@@ -8,7 +8,6 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "react-redux-worker": "file:../dist",
     "react-countdown-clock": "2",
     "react": "16",
     "react-dom": "16",
