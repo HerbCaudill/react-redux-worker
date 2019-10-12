@@ -1,10 +1,14 @@
 ## react-redux-worker
 
-Run a Redux store in a Web Worker.
+Run a Redux store in a [web worker]().
 
 ### Why
 
-Any expensive work done in a Redux store can end up
+If you're doing any sort of computationally expensive work in your Redux reducers or middleware, it can slow down
+
+### How it works
+
+![demo](./img/react-redux-worker.svg)
 
 ### Running the demo
 
@@ -16,10 +20,6 @@ yarn demo
 Then open http://localhost:1234 in a browser. You should see this:
 
 ![demo](./img/demo.gif)
-
-### How it works
-
-![demo](./img/react-redux-worker.svg)
 
 ### Usage
 
