@@ -29,7 +29,9 @@ const uniqueId = () => ++lastId
  *```
  * @param store A regular Redux store created using `Redux.createStore`.
  */
-export const createProxyStore = <T extends unknown>(store: Store<T>): ProxyStore<T> => {
+export const createProxyStore = <T extends unknown>(
+  store: Store<T>
+): ProxyStore<T> => {
   const listenerMap = new Map<number, Function>()
   return {
     async subscribe(onChangeHandler: Function): Promise<number> {
@@ -60,21 +62,4 @@ export const createProxyStore = <T extends unknown>(store: Store<T>): ProxyStore
       store.dispatch(action)
     },
   }
-}
-
-/**
- * Uses `Comlink` to expose a `proxyStore` as a worker.
- *
- * Example:
- * ```js
- *   import {expose, createProxyStore} from '...'
- *   const store = createStore(reducer)
- *   const proxyStore = createProxyStore(store)
- *   expose(proxyStore, self)
- *```
- * @param proxyStore A proxy store created using `createProxyStore`
- * @param context Typically `self` on a worker module
- */
-export const expose = <T>(proxyStore: ProxyStore<T>, context: Comlink.Endpoint | Window): void => {
-  Comlink.expose({ ...proxyStore }, context)
 }
