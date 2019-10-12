@@ -71,6 +71,7 @@ store.
 ```ts
 const worker = new Worker('./redux/worker.ts')
 const ProxyProvider = await getProvider(worker)
+import { Provider } from 'react-redux'
 
 
 ## Prior art
