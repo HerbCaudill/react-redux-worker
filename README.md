@@ -71,11 +71,3 @@ expose(proxyStore, self)
 ## Prior art
 
 Based on [redux-workerized](https://github.com/mizchi/redux-workerized) by [@mizchi](https://github.com/mizchi/)
-
-```
-
-```
-
-```
-
-```
