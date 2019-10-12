@@ -1,6 +1,6 @@
 ## react-redux-worker
 
-Run a Redux store in a [web worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers).
+Run a [Redux](https://redux.js.org) store in a [web worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers).
 
 ### Why
 
