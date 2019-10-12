@@ -18,7 +18,7 @@ similar as possible to an ordinary Redux setup.
 ## How it works
 
 This library provides you with a **proxy Redux store**. To your application, the proxy looks just
-like the real thing: You communicate with it using `useDispatch` and `useSelector`
+like the real thing: You communicate with it synchronously using `useDispatch` and `useSelector`
 hooks just like the ones that the official [react-redux](https://github.com/reduxjs/react-redux)
 bindings provide.
 
@@ -48,7 +48,7 @@ yarn add react-redux-worker
 
 ### Expose your store as a worker
 
-In a stand-alone file, import your reducers build your store the way you always have:
+In a stand-alone file, import your reducers and build your store the way you always have:
 
 ```ts
 // worker.ts
@@ -58,7 +58,7 @@ import { reducer } from './reducer'
 const store = createStore(reducer) // if you have initial state and/or middleware you can add them here as well
 ```
 
-Then create a proxy store
+Then create a proxy store, and
 
 ```ts
 import { expose, createProxyStore } from 'react-redux-worker'
