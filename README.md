@@ -17,6 +17,8 @@ Then open http://localhost:1234 in a browser. You should see this:
 
 ### How it works
 
+![demo](./img/react-redux-worker.gif)
+
 ### Usage
 
 ### Prior art
