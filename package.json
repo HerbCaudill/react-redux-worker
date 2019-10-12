@@ -4,6 +4,13 @@
     "type": "git",
     "url": "https://github.com/HerbCaudill/react-redux-worker"
   },
+  "description": "Run a Redux store in a Web Worker",
+  "keywords": [
+    "worker",
+    "web-worker",
+    "redux",
+    "react"
+  ],
   "version": "0.1.7",
   "license": "MIT",
   "main": "dist/index.js",
