@@ -12,7 +12,7 @@ In theory, web workers should be the perfect solution: You can do your heavy lif
 thread without interfering with your main UI thread. But the asynchronous, message-based [web worker API](https://redux.js.org)
 puts us in unfamiliar terrain.
 
-This library is intended to make using
+This library is intended to make the experience of using a Redux store in a worker
 
 ### How it works
 
