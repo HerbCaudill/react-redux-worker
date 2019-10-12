@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react'
+﻿import * as React, { useState } from 'react'
 import ReactCountdownClock from 'react-countdown-clock'
 
 export const Clock = () => {
