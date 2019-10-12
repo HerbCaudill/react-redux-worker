@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 
-import { getProvider } from '../src'
+import { getProvider } from 'react-redux-worker'
 
 import reducer from './redux/reducer'
 import { WithoutWorker } from './WithoutWorker'
