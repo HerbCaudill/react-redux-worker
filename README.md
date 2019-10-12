@@ -48,22 +48,15 @@ yarn add react-redux-worker
 
 ### Expose your store as a worker
 
-In a stand-alone file, import your reducers and build your store the way you always have:
+In a stand-alone file, import your reducers and build your store the way you always have. Then create a proxy store, and expose it to the Comlink messaging framework:
 
 ```ts
 // worker.ts
 import { createStore } from 'redux'
 import { reducer } from './reducer'
-
-const store = createStore(reducer) // if you have initial state and/or middleware you can add them here as well
-```
-
-Then create a proxy store, and expose it to the Comlink messaging framework:
-
-```ts
 import { expose, createProxyStore } from 'react-redux-worker'
 
-//...
+const store = createStore(reducer) // if you have initial state and/or middleware you can add them here as well
 const proxyStore = createProxyStore(store)
 expose(proxyStore, self)
 ```
