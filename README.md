@@ -4,7 +4,8 @@ Run a [Redux](https://redux.js.org) store in a [web worker](https://developer.mo
 
 ### Why
 
-If you're doing any sort of computationally expensive work in your Redux reducers or middleware, it can slow down
+If you're doing any sort of computationally expensive work in your Redux reducers or middleware, it
+can slow down your
 
 ### How it works
 
