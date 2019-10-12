@@ -34,7 +34,7 @@ yarn
 yarn demo
 ```
 
-Then open http://localhost:1234 in a browser. You should see this:
+Then open http://localhost:1234 in a browser. You should see something like this:
 
 ![demo](./img/worker-demo.gif)
 
