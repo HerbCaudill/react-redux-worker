@@ -31,7 +31,7 @@ The proxy then handles messaging back and forth with the store in the worker usi
 
 ```bash
 yarn
-yarn demo
+yarn start
 ```
 
 Then open http://localhost:1234 in a browser. You should see something like this:
