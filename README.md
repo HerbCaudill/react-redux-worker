@@ -1,11 +1,15 @@
 ## react-redux-worker
 
-Run a [Redux](https://redux.js.org) store in a [web worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers).
+Run a Redux store in a web worker.
 
 ### Why
 
 If you're doing any sort of computationally expensive work in your Redux reducers or middleware, it
-can slow down your
+can prevent your UI from responding while it's thinking&mdash;making your application feel slow and
+unresponsive.
+
+In theory, web workers should be the perfect solution: You can do your heavy lifting in a worker
+thread without interfering with your main UI thread. But the web worker
 
 ### How it works
 
