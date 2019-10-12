@@ -28,6 +28,7 @@
     "husky": "3",
     "react": "16",
     "react-dom": "16",
+    "redux": "4",
     "tsdx": "0",
     "tslib": "1",
     "typescript": "3"
