@@ -17,8 +17,8 @@ export const Clock = () => {
       seconds={seconds}
       color="#008080"
       timeFormat="seconds"
-      weight={20}
-      size={200}
+      weight={10}
+      size={100}
       onComplete={restart}
     />
   )
