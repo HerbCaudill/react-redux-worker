@@ -62,6 +62,8 @@ const proxyStore = createProxyStore(store)
 expose(proxyStore, self)
 ```
 
+### Add a provider
+
 ## Prior art
 
 Based on [redux-workerized](https://github.com/mizchi/redux-workerized) by [@mizchi](https://github.com/mizchi/)
