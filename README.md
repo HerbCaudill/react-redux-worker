@@ -46,10 +46,11 @@ Then open http://localhost:1234 in a browser. You should see something like this
 yarn add react-redux-worker
 ```
 
-### Put your store in a worker, and
+### Put your store in a worker, and create a proxy
 
-In a stand-alone file called `worker.ts` or `store.worker.ts`, import your reducer (and middlewares, if applicable) and build your store the
-way you always have. Then create wrap it in a proxy store, and expose that as a worker messaging endpoint:
+In a stand-alone file called `worker.ts` or `store.worker.ts`, import your reducer (and middlewares,
+if applicable) and build your store the way you always have. Then wrap it in a proxy store,
+and expose that as a worker messaging endpoint:
 
 ```ts
 // worker.ts
