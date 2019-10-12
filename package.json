@@ -11,7 +11,7 @@
     "redux",
     "react"
   ],
-  "version": "0.1.7",
+  "version": "0.1.8",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/react-redux-worker.esm.js",
