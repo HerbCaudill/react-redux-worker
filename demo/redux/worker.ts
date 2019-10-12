@@ -1,6 +1,6 @@
 import { createStore } from 'redux'
 import reducer from './reducer'
-import { expose, createProxyStore } from 'react-redux-worker'
+import { expose, createProxyStore } from '../src' // replace with react-redux-worker
 
 const store = createStore(reducer)
 const proxyStore = createProxyStore(store)
