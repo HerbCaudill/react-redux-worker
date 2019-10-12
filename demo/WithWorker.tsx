@@ -1,4 +1,4 @@
-﻿import React from 'react'
+﻿import * as React from 'react'
 import { useDispatch, useSelector } from '../src'
 import { State } from './redux/reducer'
 import { Calculate } from './Calculate'
