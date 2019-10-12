@@ -38,18 +38,14 @@ Then open http://localhost:1234 in a browser. You should see something like this
 
 ![demo](./img/worker-demo.gif)
 
-### Usage
-
-Add this library to your application's dependencies.
+## Usage
 
 ```
 yarn add react-redux-worker
 ```
 
-### Prior art
+###
+
+## Prior art
 
 Based on [redux-workerized](https://github.com/mizchi/redux-workerized) by [@mizchi](https://github.com/mizchi/)
-
-### License
-
-MIT
