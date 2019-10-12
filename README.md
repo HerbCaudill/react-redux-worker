@@ -53,8 +53,7 @@ In a stand-alone file, import your reducers build your store the way you always 
 ```ts
 import reducer from './reducer'
 
-const store = createStore(reducer)
-// or createStore
+const store = createStore(reducer) // if you have
 ```
 
 > **Note:** Your store should live in a file named `*.worker.js`
