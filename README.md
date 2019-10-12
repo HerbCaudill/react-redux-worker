@@ -57,7 +57,7 @@ import { reducer } from './reducer'
 const store = createStore(reducer) // if you have initial state and/or middleware you can add them here as well
 ```
 
-> **Note:** Your store should live in a file named `*.worker.js`
+> **Note:** Your store should live in a file ending with `worker.js` or `worker.ts`.
 
 ## Prior art
 
