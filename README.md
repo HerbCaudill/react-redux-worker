@@ -65,7 +65,8 @@ expose(proxyStore, self)
 
 ### Add a context provider for the proxy store
 
-At the root of your app, replace your standard `Provider` with one that
+At the root of your app, replace your standard `Provider` with one that gives access to the proxy
+store.
 
 ## Prior art
 
