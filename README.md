@@ -65,15 +65,50 @@ expose(proxyStore, self)
 
 ### Add a context provider for the proxy store
 
-At the root of your app, replace your standard `Provider` with one that gives access to the proxy
-store.
+At the root of your app, replace your standard react-redux `Provider` with one that gives access to
+the proxy store.
 
-```ts
+```tsx
+import { getProvider } from 'react-redux-worker'
+
 const worker = new Worker('./redux/worker.ts')
-const ProxyProvider = await getProvider(worker)
-import { Provider } from 'react-redux'
+const ProxyProvider = getProvider(worker)
+
+ReactDOM.render(
+  <ProxyProvider>
+    <App />
+  </ProxyProvider>,
+  document.querySelector('.root')
+)
+```
+
+### Use the proxy `useDispatch` and `useSelector` hooks in your components
+
+```tsx
+import * as React from 'react'
+import { useDispatch, useSelector } from 'react-redux-worker'
+import { actions } from './redux/actions'
+
+export function WithWorker() {
+  const state = useSelector((s => s)
+  const dispatch = useDispatch()
+
+  dispatch(actions.setBusy(true))
+  dispatch(actions.doSomeHeavyLifting())
+  dispatch(actions.setBusy(false))
+
+  return (<div>
+    {state.busy ? (
+      <span>Thinking...</span>
+    ) : (
+      <span>Result: {state.result}</span>
+    )}
+  </div>)
+}
 ```
 
 ## Prior art
 
-Based on [redux-workerized](https://github.com/mizchi/redux-workerized) by [@mizchi](https://github.com/mizchi/)
+- Based on [redux-workerized](https://github.com/mizchi/redux-workerized) by
+  [@mizchi](https://github.com/mizchi/)
+- Uses some ideas from [A Guide to using Web Workers in React](https://www.fullstackreact.com/articles/introduction-to-web-workers-with-react/)
