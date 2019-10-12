@@ -1,22 +1,20 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
-import { createStore } from 'redux'
+import { store } from './redux/store'
 
 import { getProvider } from '../src' // replace with 'react-redux-worker'
 
-import reducer from './redux/reducer'
+import { Clock } from './Clock'
 import { WithoutWorker } from './WithoutWorker'
 import { WithWorker } from './WithWorker'
-import { Clock } from './Clock'
 
 const start = async () => {
   // Set up proxy provider
   const worker = new Worker('./redux/worker.ts')
-  const ProxyProvider = await getProvider(worker)
+  const ProxyProvider = getProvider(worker)
 
   // Set up regular provider
-  const store = createStore(reducer)
   const RegularProvider = ({ children }) => (
     <Provider store={store}>{children}</Provider>
   )
