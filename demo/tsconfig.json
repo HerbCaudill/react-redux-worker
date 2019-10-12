@@ -14,7 +14,6 @@
     "sourceMap": true,
     "lib": ["es2015", "es2016", "dom"],
     "baseUrl": ".",
-    "types": ["node"],
-    "paths": { "react-redux-worker": ["../src/index.ts"] }
+    "types": ["node"]
   }
 }
