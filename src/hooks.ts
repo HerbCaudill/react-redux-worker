@@ -1,7 +1,7 @@
 ﻿import * as Comlink from 'comlinkjs'
 import { useContext, useEffect, useState } from 'react'
 import { AnyAction, Dispatch } from 'redux'
-import ProxyStore from './proxy'
+import ProxyStore from './ProxyStore'
 import { StoreContext } from './StoreContext'
 import { StateContext } from './StateContext'
 type Selector<T> = (state: T) => any
