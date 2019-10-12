@@ -64,7 +64,7 @@ expose(proxyStore, self)
 
 ### Add a context provider for the proxy store
 
-The only other change you have to make is to
+The only other change you have to make is to replace your standard `Provider` with a
 
 ## Prior art
 
